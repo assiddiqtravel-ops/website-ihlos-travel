@@ -1,0 +1,13 @@
+# Siqilmagan asl media fayllar (saytga k/irmaydi)
+_originals/
+
+# Yuklab olish uchun arxiv
+ihlos-travel-sayt.zip
+
+# Muharrir / xizmat sozlamalari
+.claude/
+
+# Tizim fayllari
+Thumbs.db
+desktop.ini
+.DS_Store
