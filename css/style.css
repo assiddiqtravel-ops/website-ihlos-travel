@@ -541,6 +541,26 @@ ul { list-style: none; }
 .cta p { color: rgba(255,255,255,.75); font-size: 17px; margin-bottom: 32px; }
 .cta__btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
 
+/* CTA lead form */
+.cta-form {
+  max-width: 540px; margin: 0 auto 20px; background: var(--white);
+  border-radius: var(--radius-lg); padding: 26px; box-shadow: var(--shadow-lg); text-align: left;
+}
+.cta-form__row { display: flex; gap: 12px; margin-bottom: 12px; }
+.cta-form input {
+  width: 100%; padding: 14px 16px; border: 1.5px solid var(--gray-line); border-radius: var(--radius);
+  font-family: inherit; font-size: 15px; color: var(--black); background: #fff; transition: border-color .18s ease, box-shadow .18s ease;
+}
+.cta-form input::placeholder { color: #9AA3AE; }
+.cta-form input:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,162,77,.18); }
+.cta-form > input[name="message"] { margin-bottom: 16px; }
+.cta-form .btn { margin-top: 2px; }
+.cta-form__note { margin: 14px 0 0; text-align: center; font-weight: 700; color: var(--green); }
+.cta-form__note.error { color: #DC2626; }
+.cta__or { color: rgba(255,255,255,.7); font-size: 14px; margin-bottom: 16px; }
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+@media (max-width: 560px) { .cta-form__row { flex-direction: column; gap: 12px; } }
+
 /* ============ CONTACT ============ */
 .contact {
   display: grid;

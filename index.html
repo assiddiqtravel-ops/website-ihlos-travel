@@ -372,7 +372,21 @@
 <section class="cta">
   <div class="container cta__inner">
     <h2>Safaringizni bugundan boshlang</h2>
-    <p>Bir qo'ng'iroq — va sizga mos variant, aniq narx bilan tayyor bo'ladi.</p>
+    <p>Ariza qoldiring — biz siz bilan bog'lanamiz va sizga mos variantni tanlaymiz.</p>
+
+    <form class="cta-form" id="leadForm" novalidate>
+      <div class="cta-form__row">
+        <input type="text" name="name" required placeholder="Ismingiz" aria-label="Ismingiz" />
+        <input type="tel" name="phone" required placeholder="Telefon raqamingiz" aria-label="Telefon raqamingiz" />
+      </div>
+      <input type="text" name="message" placeholder="Qaysi yo'nalish? (masalan: Umra, aviabilet)" aria-label="Yo'nalish yoki xabar" />
+      <!-- Honeypot (spamga qarshi) — bo'sh qolishi kerak -->
+      <input class="hp-field" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button type="submit" class="btn btn--gold btn--lg btn--full">Ariza qoldirish</button>
+      <p class="cta-form__note" id="formNote" hidden></p>
+    </form>
+
+    <p class="cta__or">yoki biz bilan to'g'ridan-to'g'ri bog'laning</p>
     <div class="cta__btns">
       <a href="https://wa.me/998971645577?text=Assalomu%20alaykum!" target="_blank" rel="noopener" class="btn btn--gold btn--lg">WhatsApp'da yozish</a>
       <a href="tel:+998971645577" class="btn btn--outline-light btn--lg">+998 97 164 55 77</a>

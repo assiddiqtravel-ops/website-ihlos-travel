@@ -1,0 +1,9 @@
+# Netlify konfiguratsiyasi
+# Sayt ildizdan chiqariladi (index.html shu yerda), funksiyalar netlify/functions dan.
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
